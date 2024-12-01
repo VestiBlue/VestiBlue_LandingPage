@@ -1,9 +1,11 @@
 site:
   name: VestiBlue
-  site: 'https://vestiblue.com'
+  site: 'http://vestiblue.com'
   base: '/'
   trailingSlash: false
-
+  redirects: {
+  '/': '/404',
+  }
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
