@@ -87,4 +87,6 @@ export default defineConfig({
       },
     },
   },
+
+  site: 'http://www.vestiblue.com'
 });
