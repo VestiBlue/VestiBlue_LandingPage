@@ -20,21 +20,49 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Vestiblue</span> provides guided rehabilitation exercises in Virtual and Augmented Reality. 
-        Increase your quality of life and save money exercising in the comfort of your own home.
+        <span class="font-semibold">Vestiblue</span> enables guided rehabilitation exercises in Virtual and Augmented Reality. 
+        Increase quality of life and save money by exercising in the comfort of your own home.
         </span>
     </Fragment>
 
   </Hero>
 
+  <FAQs
+  title="How it works?"
+  subtitle="Our applications are based on proven physical therapy methods"
+  classes={{ container: 'max-w-6xl' }}
+  items={[
+      {
+        title: 'What do I need to start?',
+        description:
+          'Vestiblue is an application currently being developed for the Meta Quest 3 virtual reality headset. Other wearable and mobile devices will be supported in the future',
+      },
+      {
+        title: 'How effective is vestibular rehabilitation?',
+        description:
+          "Vestibular rehabilitation therapy (VRT) is highly effective for a range of vestibular disorders, with success rates often ranging between 60% to 90%, depending on the condition and adherence to the therapy. Here’s a breakdown of its effectiveness based on specific conditions",
+      },
+      {
+        title: 'Is it safe to exercise on my own?',
+        description:
+          "Caution is advised when performing any kind of activity, especially when using a wearable electronic device. All vestibular rehabilitation exercises for Vestiblue were developed by experts, taking special care to minimise risks.",
+      },
+      {
+        title: "Will my PT be able to track and adjust my rehab?",
+        description:
+          "We are developing a platform that will enable licensed PT providers to track your individual progress and adjust your therapy schedule and exercises.",
+      }
+    ]}
+  />
+
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get Notified',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Subscribe',
+        href: '',
         target: '_blank',
-        icon: 'tabler:download',
+        //icon: 'tabler:download',
       },
     ]}
   >
@@ -42,36 +70,10 @@ const metadata = {
       Coming soon<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
 
-    <!-- <Fragment slot="subtitle">
-    Coming soon
-    </Fragment> -->
+    <Fragment slot="subtitle">
+    Subscribe to get notified when Vestiblue launches
+    </Fragment>
   </CallToAction>
 
-  <FAQs
-  title="How it works?"
-  subtitle="Our applications are based on proven physical therapy methods"
-  classes={{ container: 'max-w-6xl' }}
-  items={[
-        {
-      title: 'What do I need to start?',
-      description:
-        'Vestiblue is an application currently being developed for the Meta Quest 3 virtual reality headset. Other wearable and mobile devices will be supported in the future',
-    },
-    {
-      title: 'How effective is vestibular rehabilitation?',
-      description:
-        "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-    },
-    {
-      title: 'Is it safe to exercise on my own?',
-      description:
-        "Caution is advised when performing any kind of activity, especially when using a wearable electronic device. All vestibular rehabilitation exercises for Vestiblue were developed by experts, taking special care to minimise risks.",
-    },
-    {
-      title: "Will my PT be able to track and adjust my rehab?",
-      description:
-        "We are developing a platform that will enable licensed PT providers to track your individual progress and adjust your therapy schedule and exercises.",
-    }
-  ]}
-/>
+
 </Layout>
